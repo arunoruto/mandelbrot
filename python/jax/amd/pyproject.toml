@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "amd"
+version = "0.1.0"
+description = ""
+authors = ["arunoruto <mirza.arnaut@tu-dortmund.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+numpy = "<2"
+jaxlib = {url = "https://github.com/ROCmSoftwarePlatform/jax/releases/download/jaxlib-v0.4.26/jaxlib-0.4.26+rocm570-cp311-cp311-manylinux2014_x86_64.whl"}
+jax = {url = "https://github.com/ROCmSoftwarePlatform/jax/archive/refs/tags/jaxlib-v0.4.26.tar.gz"}
+# jaxlib = {url = "https://github.com/ROCm/jax/releases/download/rocm-jaxlib-v0.4.30/jaxlib-0.4.30+rocm602-cp311-cp311-manylinux2014_x86_64.whl"}
+# jax = {url = "https://github.com/ROCm/jax/archive/refs/tags/rocm-jaxlib-v0.4.30.tar.gz"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
